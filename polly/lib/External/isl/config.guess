@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 # Attempt to guess a canonical system name.
 #   Copyright 1992-2018 Free Software Foundation, Inc.
 
@@ -146,7 +146,7 @@ Linux|GNU|GNU/*)
 	#elif defined(__dietlibc__)
 	LIBC=dietlibc
 	#else
-	LIBC=gnu
+	LIBC=android
 	#endif
 	EOF
 	eval "`$CC_FOR_BUILD -E "$dummy.c" 2>/dev/null | grep '^LIBC' | sed 's, ,,g'`"
